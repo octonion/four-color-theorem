@@ -1,0 +1,282 @@
+# This file describes a set of rules equivalent to the set from the paper
+# `An unavoidable set of D-reducible configurations' by J. Steinberger.
+# Please refer to the manuscript `Discharging Cartwheels' by Robertson et al.
+# for the meaning of the shorthand used to input the rules, and to the
+# arrays U, V of the function 'ReadOutlets' in discharge.c (commented 'jps').
+
+# JPS, June 2008
+
+# Notes by Robertson et al:
+
+# As explained [in 'Discharging Cartwheels'] each rule is specified by 
+# beta(v_0), delta(v_0), beta(v_1), delta(v_1), and all triples 
+# (i,beta(v_i),delta(v_i)) such that 2<=i<=16 and v_i belongs to V(G).        ## NB: in our case 16 is replaced by 28 (jps)
+#
+# The first line of each rule describes beta(v_0), delta(v_0), beta(v_1)
+# and delta(v_1) using the convention that "5" means "55", "6" means "66",
+# etc. The second line describes all triples (i,beta(v_i),delta(v_i))
+# using the same convention as above and interpreting "9" to mean "12".
+# If there are no triples (i,beta(v_i),delta(v_i)), then the second line
+# is omitted.
+#
+
+#Rule 1
+1	5 69
+
+2 invert
+
+#Rule 2
+3	56 79
+3 5	
+
+4 invert
+
+#Rule 3
+5	56 59
+3 56	5 5	
+
+6 invert
+
+#Rule 4
+7	56 69
+3 5	5 56	9 5	
+
+8 invert
+
+#Rule 4
+9	56 69
+3 6	5 56	9 5	
+
+10 invert
+
+#Rule 5
+11	6 69
+3 6	5 56	9 56	11 5	
+
+12 invert
+
+#Rule 6
+13	6 79
+3 5	7 5	5 6	9 56	
+
+14 invert
+
+#Rule 7
+15	6 79
+3 6	5 6	9 56	11 56	7 5	
+
+16 invert
+
+#Rule 8
+17	7 79
+3 56	5 5	
+
+18 invert
+
+#Rule 9
+19	7 79
+3 56	5 56	14 5	
+
+20 invert
+
+#Rule 10
+21	7 79
+2 5	4 56	3 5	8 5	
+
+22 invert
+
+#Rule 10
+23	7 79
+2 6	4 56	3 5	8 5	
+
+24 invert
+
+#Rule 11
+25	7 79
+2 5	3 7	5 5	9 5	
+
+26 invert
+
+#Rule 12
+27	7 89
+2 5	4 67	3 5	8 5	5 5	
+
+28 invert
+
+#Rule 13
+29	7 79
+2 6	4 6	12 5	13 5	8 69	
+
+30 invert
+
+#Rule 14
+31	7 7
+2 5	4 6	12 5	3 69	8 5	5 69	
+
+32 invert
+
+#Rule 15
+33	7 79
+2 6	4 5	12 5	13 6	17 5	8 79	
+
+34 invert
+
+#Rule 16
+35	7 79
+2 5	4 5	12 6	13 5	3 69	6 69	
+
+36 invert
+
+#Rule 17
+37	7 89
+3 5	7 5	5 6	9 5	14 5	
+
+38 invert
+
+#Rule 18
+39	7 79
+3 6	5 5	14 6	19 5	20 6	
+
+40 invert
+
+#Rule 19
+41	7 79
+2 6	4 6	12 6	13 5	17 5	8 69	
+
+42 invert
+
+#Rule 20
+43	7 7
+2 6	4 5	6 6	15 5	16 69	
+
+44 invert
+
+#Rule 21
+45	7 79
+2 6	4 5	12 5	13 79	17 5	3 5	8 6	25 69	10 69	
+
+46 invert
+
+#Rule 22
+47	7 79
+2 5	4 5	12 5	8 79	
+
+48 invert
+
+#Rule 23
+49	7 79
+2 5	4 6	12 6	13 5	
+
+50 invert
+
+#Rule 24
+51	7 7
+2 6	4 5	12 5	13 5	17 6	3 79	6 5	
+
+52 invert
+
+#Rule 25
+53	7 79
+3 5	5 6	9 69	14 5	19 5	20 79	
+
+54 invert
+
+#Rule 26
+55	7 7
+2 5	3 7	6 6	21 79	7 69	5 5	
+
+56 invert
+
+#Rule 27
+57	7 89
+2 7	4 5	3 5	8 6	10 5	
+
+58 invert
+
+#Rule 28
+59	7 7
+2 6	4 5	12 6	13 5	17 5	3 79	6 5	
+
+60 invert
+
+#Rule 29
+61	7 89
+2 5	3 7	5 6	9 5	
+
+62 invert
+
+#Rule 30
+63	7 79
+2 6	4 5	12 6	13 5	17 5	3 7	25 6	28 6	7 69	18 5	
+
+64 invert
+
+#Rule 31
+65	7 7
+2 5	4 7	12 5	3 5	8 5	7 69	
+
+66 invert
+
+#Rule 32
+67	7 7
+2 5	4 89	3 7	6 6	7 69	22 69	23 5	5 5	
+
+68 invert
+
+#Rule 33
+69	7 79
+2 7	4 5	3 7	8 5	5 6	9 5	11 69	14 5	
+
+70 invert
+
+#Rule 34
+71	7 7
+2 5	3 7	6 79	21 69	7 69	18 69	5 5	9 6	11 5	14 5	
+
+72 invert
+
+#Rule 35
+73	7 7
+2 79	3 6	6 6	7 5	5 6	9 5	14 5	
+
+74 invert
+
+#Rule 36
+75	7 79
+2 7	4 6	12 5	13 6	17 6	3 7	8 5	25 5	28 69	10 69	
+
+76 invert
+
+#Rule 37
+77	7 7
+2 7	4 6	3 5	6 69	7 6	21 69	5 7	9 79	
+
+78 invert
+
+#Rule 38
+79	7 7
+2 6	4 5	3 79	6 5	7 6	22 5	23 6	
+
+80 invert
+
+#Rule 39
+81	8 79
+2 5	4 5	3 5	5 5	
+
+#Rule 40
+82	8 79
+2 5	4 6	12 5	3 5	6 69	21 5	5 5	9 69	14 79	
+
+83 invert
+
+#Rule 41
+84	8 79
+3 6	5 5	14 5	19 5	20 5	
+
+85 invert
+
+#Rule 42
+86	8 79
+3 5	7 69	5 5	14 5	19 5	20 79	27 5	
+
+87 invert
