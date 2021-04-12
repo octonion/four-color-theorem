@@ -1,3 +1,8 @@
+An unavoidable set of D-reducible configurations
+John Steinberger
+We give a new proof of the four-color theorem by exhibiting an unavoidable set of 2822 D-reducible configurations. The existence of such a set had been conjectured by several researchers including Stromquist, Appel and Haken, and Robertson, Sanders, Seymour and Thomas.
+https://arxiv.org/abs/0905.0043
+
 The following files accompany the paper "An unavoidable set of D-recudible configurations"
 by John Steinberger:
 
