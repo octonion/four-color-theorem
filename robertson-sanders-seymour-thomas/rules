@@ -1,0 +1,217 @@
+# This file describes a set of rules equivalent to the set from the paper
+# `The Four-Colour Theorem' by N. Robertson, D. P. Sanders, P. D. Seymour
+# and R. Thomas. Please refer to the manuscript `Discharging Cartwheels'.
+# As explained therein, to describe a rule we list beta(v_0), delta(v_0),
+# beta(v_1), delta(v_1), and all triples (i,beta(v_i),delta(v_i)) such
+# that 2<=i<=16 and v_i belongs to V(G).
+#
+# The first line of each rule describes beta(v_0), delta(v_0), beta(v_1)
+# and delta(v_1) using the convention that "5" means "55", "6" means "66",
+# etc. The second line describes all triples (i,beta(v_i),delta(v_i))
+# using the same convention as above and interpreting "9" to mean "12".
+# If there are no triples (i,beta(v_i),delta(v_i)), then the second line
+# is omitted.
+#
+# 22 April 1995, slightly revised 14 January 1997
+#
+#
+
+# Rule 1
+1	5 59
+
+2	invert
+
+# Rule 2
+3	56 79
+3 5
+
+4	invert
+
+# Rule 3
+5	56 69
+3 56	5 5
+ 
+6	invert
+
+# Rule 4
+7	6 69
+3 5	5 56	9 5
+ 
+8	invert
+
+9	6 69
+3 6	5 56	9 5
+
+10	invert
+
+# Rule 5
+11      6 69
+3 6     5 6     9 56    11 5
+ 
+12      invert
+
+# Rule 6
+13	6 79
+3 5	5 6	7 5	9 56
+
+14	invert
+
+# Rule 7
+15	6 79
+3 6	5 6	7 5	9 6	11 56
+
+16	invert
+
+# Rule 8
+17	7 79
+3 56	5 5
+
+18	invert
+
+# Rule 9
+19	7 79
+3 56	5 56	14 5
+
+20	invert
+
+# Rule 10
+21	7  79
+2 5	3 5	4 5	5 5
+
+22	7 79
+2 5	3 5	4 5	5 69
+
+23	invert
+
+# Rule 11
+24	7  79
+2 5	3 5	4 6	5 69	8 5
+
+25	invert
+
+# Rule 12
+26	7  79
+2 5	3 5	4 5	5 5	8 5	9 5
+
+# Rule 13
+27	7  89
+2 5	3 5	4 6	5 5	6 5	8 5
+
+28	invert
+
+# Rule 14
+29	7 79
+2 6	3 5	4 5	8 5
+
+30	invert
+
+# Rule 15
+31	7 79
+2 6	3 5	4 5	5 79	12 6	13 5
+
+32	invert
+
+# Rule 16
+33	7 79
+2 6	3 5	4 6	5 5	12 6	13 5
+
+34	invert
+
+# Rule 17
+35	7 79
+2 6	3 5	4 5	5 5	8 6	12 5	13 79
+
+36	invert
+
+# Rule 18
+37	7 7
+2 69	3 5	5 6	7 5	9 5	14 5
+
+38	invert
+
+# Rule 19
+39	7 89
+2 69	3 5	4 6	5 6	7 5	9 5	12 6	13 5
+
+40	invert
+
+# Rule 20
+41	7 79
+2 6	3 6	4 5	5 6	12 5	13 5
+
+42	invert
+
+# Rule 21
+43	7 7
+2 6	3 69	4 56	6 5	12 5	13 5
+
+44	invert
+
+# Rule 22
+45	7 7
+2 6	3 69	4 5	6 5	12 6	13 5
+
+46	invert
+
+# Rule 23
+47	7 79
+2 5	3 7	5 5	9 5
+
+48	invert
+
+# Rule 24
+49	7 7
+2 5	3 79	4 5	5 6	6 5	12 5	13 6
+
+50	invert
+
+# Rule 25
+51	7 79
+2 5	3 7	4 5	5 5	9 6	11 5	14 5
+
+52	invert
+
+# Rule 26
+53	7 7
+2 6	3 79	4 6	5 5	6 5	12 6	13 5
+
+54	invert
+
+# Rule 27
+55	7 7
+2 6	3 7	4 79	5 56	6 6	9 5	15 5	16 69
+
+56	invert
+
+# Rule 28
+57	8 79
+2 5	3 5	4 5	5 5	12 5
+
+58	invert
+
+# Rule 29
+59	8 79
+2 5	3 5	4 5	8 5	12 5	13 5
+
+60	invert
+
+# Rule 30
+61	8 79
+2 5	3 5	4 5	5 6	9 5	14 5
+
+62	invert
+
+# Rule 31
+63	8 79
+2 5	3 5	4 5	5 5	8 5	9 5	12 69	14 69
+
+64	8 79
+2 5	3 5	4 5	5 5	8 5	9 69	12 69	14 69
+
+65	invert
+
+# Rule 32
+66	8 7
+2 6	3 79	4 5	5 6	6 5	12 5	13 5	14 5
+
+67	invert
